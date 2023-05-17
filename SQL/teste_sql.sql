@@ -19,7 +19,7 @@ CREATE TABLE parentesco(
  idAluno bigint unsigned NOT NULL,
  parentesco varchar(255) NOT NULL,
  PRIMARY KEY (id),
- foreign key (idAluno) references responsavel(id),
+ foreign key (idResponsavel) references responsavel(id),
  foreign key (idAluno) references aluno(id)
 )
 
